@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/soso/Documents/Projects/GLC++/Engine/build",
+  "command": "/usr/bin/clang++ -I/home/soso/Documents/Projects/GLC++/Engine/include -I/home/soso/Documents/Projects/GLC++/Core/include -g -std=gnu++20 -o CMakeFiles/GLEngine.dir/src/dummy.cpp.o -c /home/soso/Documents/Projects/GLC++/Engine/src/dummy.cpp",
+  "file": "/home/soso/Documents/Projects/GLC++/Engine/src/dummy.cpp",
+  "output": "CMakeFiles/GLEngine.dir/src/dummy.cpp.o"
+},
+{
+  "directory": "/home/soso/Documents/Projects/GLC++/Engine/build",
+  "command": "/usr/bin/clang++ -I/home/soso/Documents/Projects/GLC++/Engine/include -I/home/soso/Documents/Projects/GLC++/Core/include -g -std=gnu++20 -o CMakeFiles/GLEngine.dir/src/instance/instance.cpp.o -c /home/soso/Documents/Projects/GLC++/Engine/src/instance/instance.cpp",
+  "file": "/home/soso/Documents/Projects/GLC++/Engine/src/instance/instance.cpp",
+  "output": "CMakeFiles/GLEngine.dir/src/instance/instance.cpp.o"
+}
+]

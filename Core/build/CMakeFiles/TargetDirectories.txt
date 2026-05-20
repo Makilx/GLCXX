@@ -1,0 +1,2 @@
+/home/soso/Documents/Projects/GLC++/Core/build/CMakeFiles/edit_cache.dir
+/home/soso/Documents/Projects/GLC++/Core/build/CMakeFiles/rebuild_cache.dir
