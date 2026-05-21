@@ -28,7 +28,7 @@ namespace gle {
         void Fire(EventType &event) {
             if (listeners.size() == 0)
                 return;
-            for (Listener &l : listeners) {
+            for (auto &[id, l] : listeners) {
                 l(event);
                 if (event.IsHandled())
                     break;

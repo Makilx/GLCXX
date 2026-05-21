@@ -1,5 +1,5 @@
-/home/soso/Documents/Projects/GLC++/Engine/build/CMakeFiles/GLEngine.dir
-/home/soso/Documents/Projects/GLC++/Engine/build/CMakeFiles/edit_cache.dir
-/home/soso/Documents/Projects/GLC++/Engine/build/CMakeFiles/rebuild_cache.dir
-/home/soso/Documents/Projects/GLC++/Engine/build/Core/CMakeFiles/edit_cache.dir
-/home/soso/Documents/Projects/GLC++/Engine/build/Core/CMakeFiles/rebuild_cache.dir
+/home/jose/Documents/Projects/GLCXX/Engine/build/CMakeFiles/GLEngine.dir
+/home/jose/Documents/Projects/GLCXX/Engine/build/CMakeFiles/edit_cache.dir
+/home/jose/Documents/Projects/GLCXX/Engine/build/CMakeFiles/rebuild_cache.dir
+/home/jose/Documents/Projects/GLCXX/Engine/build/Core/CMakeFiles/edit_cache.dir
+/home/jose/Documents/Projects/GLCXX/Engine/build/Core/CMakeFiles/rebuild_cache.dir
