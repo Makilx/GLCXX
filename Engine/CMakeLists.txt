@@ -10,6 +10,7 @@ project(GLEngine LANGUAGES CXX)
 add_library(
     GLEngine
     src/dummy.cpp
+    src/service/runService.cpp
 )
 
 target_include_directories(

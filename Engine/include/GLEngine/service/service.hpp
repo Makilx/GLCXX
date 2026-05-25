@@ -4,6 +4,7 @@
 
 namespace gle {
     class DataModel;
+    class RunService;
     class Service {
       public:
         Service(DataModel *dataModel) : dataModel(dataModel) {}
@@ -23,5 +24,6 @@ namespace gle {
 
       private:
         friend class DataModel;
+        friend class RunService;
     };
 } // namespace gle
