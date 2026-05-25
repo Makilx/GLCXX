@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/soso/Documents/Projects/GLC++/Core/build",
-  "command": "/usr/bin/clang++ -I/home/soso/Documents/Projects/GLC++/Core/include -g -std=gnu++20 -o CMakeFiles/GLEngineTooling.dir/tools/dummy.cpp.o -c /home/soso/Documents/Projects/GLC++/Core/tools/dummy.cpp",
-  "file": "/home/soso/Documents/Projects/GLC++/Core/tools/dummy.cpp",
-  "output": "CMakeFiles/GLEngineTooling.dir/tools/dummy.cpp.o"
-}
-]

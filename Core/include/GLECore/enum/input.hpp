@@ -1,8 +1,5 @@
 #pragma once
 
-#include <GLECore/math/vector.hpp>
-#include <GLEngine/services/service.hpp>
-
 namespace gle {
     enum class Key : unsigned int {
         Unknown = 0,
@@ -164,13 +161,14 @@ namespace gle {
         Start = 7,
         Guide = 8,
 
-        LeftThumb = 9,
-        RightThumb = 10,
-
         DPadUp = 11,
         DPadRight = 12,
         DPadDown = 13,
         DPadLeft = 14
+    };
+    enum class GamepadThumbstick : unsigned int {
+        LeftThumb = 9,
+        RightThumb = 10,
     };
     enum class InputState : unsigned int {
         Pressing = 0,
@@ -187,27 +185,5 @@ namespace gle {
         Default = 0,
         Disabled = 1,
         Hidden = 2
-    };
-
-    class InputService : public Service {
-      public:
-        using Service::Service;
-
-      public:
-        Vec2 GetMousePos() const;
-        Vec2 GetMouseDelta() const;
-        CursorBehavior GetCursorBehavior() const;
-        InputType GetLastInputType() const;
-        bool GetKey(Key key, InputState state = InputState::Holding);
-        bool GetMouseButton(MouseButton button, InputState state = InputState::Holding);
-
-      public:
-        void SetCursorBehavior(CursorBehavior behavior);
-        void SetMousePos(Vec2 pos);
-
-      protected:
-        void OnInit() override {}
-        void OnUpdate(double deltaTime) override {}
-        void OnTerminate() override {}
     };
 } // namespace gle

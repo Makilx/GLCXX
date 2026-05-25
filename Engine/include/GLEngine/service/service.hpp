@@ -4,17 +4,14 @@
 
 namespace gle {
     class DataModel;
-
     class Service {
       public:
-        virtual std::string ToString() const { return "Service"; }
         Service(DataModel *dataModel) : dataModel(dataModel) {}
+        virtual ~Service() = default;
 
+      public:
+        virtual std::string ToString() const { return "Service"; }
         DataModel *GetDataModel() const { return dataModel; }
-        template <typename T>
-        T *As() const {
-            return dynamic_cast<T *>(this);
-        }
 
       protected:
         virtual void OnInit() {}
@@ -24,6 +21,7 @@ namespace gle {
       private:
         DataModel *dataModel;
 
+      private:
         friend class DataModel;
     };
 } // namespace gle
