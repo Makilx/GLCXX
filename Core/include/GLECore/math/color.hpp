@@ -206,19 +206,21 @@ namespace gle {
             return std::string(out, 9);
         }
 
+        // Presets
+        static inline constexpr Color Red{1.0f, 0.0f, 0.0f, 1.0f};
+        static inline constexpr Color Green{0.0f, 1.0f, 0.0f, 1.0f};
+        static inline constexpr Color Blue{0.0f, 0.0f, 1.0f, 1.0f};
+        static inline constexpr Color White{1.0f, 1.0f, 1.0f, 1.0f};
+        static inline constexpr Color Black{0.0f, 0.0f, 0.0f, 1.0f};
+        static inline constexpr Color Clear{0.0f, 0.0f, 0.0f, 0.0f};
+        static inline constexpr Color Yellow{1.0f, 1.0f, 0.0f, 1.0f};
+        static inline constexpr Color Cyan{0.0f, 1.0f, 1.0f, 1.0f};
+        static inline constexpr Color Magenta{1.0f, 0.0f, 1.0f, 1.0f};
+        static inline constexpr Color Gray{0.5f, 0.5f, 0.5f, 1.0f};
+
         // Misc
         std::string ToString() const { return ToHEX(); }
     };
 
-    // Presets
-    static inline constexpr Color Red{1.0f, 0.0f, 0.0f, 1.0f};
-    static inline constexpr Color Green{0.0f, 1.0f, 0.0f, 1.0f};
-    static inline constexpr Color Blue{0.0f, 0.0f, 1.0f, 1.0f};
-    static inline constexpr Color White{1.0f, 1.0f, 1.0f, 1.0f};
-    static inline constexpr Color Black{0.0f, 0.0f, 0.0f, 1.0f};
-    static inline constexpr Color Clear{0.0f, 0.0f, 0.0f, 0.0f};
-    static inline constexpr Color Yellow{1.0f, 1.0f, 0.0f, 1.0f};
-    static inline constexpr Color Cyan{0.0f, 1.0f, 1.0f, 1.0f};
-    static inline constexpr Color Magenta{1.0f, 0.0f, 1.0f, 1.0f};
-    static inline constexpr Color Gray{0.5f, 0.5f, 0.5f, 1.0f};
+
 } // namespace gle

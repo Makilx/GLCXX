@@ -3,7 +3,10 @@
 #include <GLECore/pch.hpp>
 #include <GLEngine/service/service.hpp>
 
+#include <GLEngine/service/runService.hpp>
+
 namespace gle {
+    class RunService;
     class DataModel {
       public:
         void Init() {
@@ -12,6 +15,7 @@ namespace gle {
             initialized = true;
 
             // Create all services
+            RegisterService(new RunService(this));
 
             // Load all services
             for (auto &[id, service] : services) {
@@ -60,5 +64,7 @@ namespace gle {
             }
         }
         void RegisterService(Service *service) { services.insert({service->ToString(), service}); }
+
+        friend class RunService;
     };
 } // namespace gle
