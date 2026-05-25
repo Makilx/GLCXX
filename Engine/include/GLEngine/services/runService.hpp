@@ -27,6 +27,7 @@ namespace gle {
         std::string ToString() const override { return "RunService"; }
         using Service::Service;
 
+      public:
         double GetTime() const;
         double GetDeltaTimeRaw() const;
         double GetDeltaTime() const;
@@ -34,6 +35,7 @@ namespace gle {
         void SetUpdateSpeed(float speed);
         double GetFramerate() const;
 
+      public:
         void BindToUpdate(std::string bind, unsigned int priority, RunCallbackFunction callback);
         template <typename T>
         void BindToUpdate(std::string bind, unsigned int priority, T *instance,

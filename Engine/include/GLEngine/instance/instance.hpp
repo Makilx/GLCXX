@@ -7,6 +7,8 @@
 
 namespace gle {
     class Instance;
+    class RenderService;
+    class Workspace;
 
     // Events
     struct InstanceEvent : public Event {
@@ -125,6 +127,13 @@ namespace gle {
         static std::unordered_map<size_t, Instance *> activeInstances;
 
       private:
+        static void ClearAllActiveInstances() {
+            for (auto &[id, instance] : activeInstances) {
+                instance->Destroy();
+            }
+        }
+
+      private:
         size_t GenerateUniqueID() {
             static size_t gID = 0;
             return gID++;
@@ -146,5 +155,9 @@ namespace gle {
         }
         void RegisterProperty(PropertyBase property, std::string name) { properties.insert({name, property}); }
         void RegisterInstance() { activeInstances.insert({uniqueID, this}); }
+
+      private:
+        friend class RenderService;
+        friend class Workspace;
     };
 } // namespace gle

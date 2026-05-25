@@ -9,13 +9,24 @@
 
 namespace gle::backend {
     struct RenderObject {
-        IMesh *mesh;
-        IMaterial *material;
+        const IMesh *mesh;
+        const IMaterial *material;
         Mat4 modelMatrix;
+        int renderLayer;
     };
 
     class IRenderer {
       public:
-      private:
+        virtual ~IRenderer() = default;
+
+        virtual void Init() = 0;
+        virtual void Terminate() = 0;
+
+        virtual void BeginFrame() = 0;
+        virtual void EndFrame() = 0;
+
+        virtual void Submit(const RenderObject &object) = 0;
+        virtual void Flush() = 0;
     };
+
 } // namespace gle::backend

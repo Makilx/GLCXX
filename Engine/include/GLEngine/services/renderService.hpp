@@ -1,5 +1,8 @@
 #pragma once
 
+#include <GLECore/pch.hpp>
+#include <GLEInterface/IRenderer.hpp>
+#include <GLEngine/instance/instance.hpp>
 #include <GLEngine/services/service.hpp>
 
 namespace gle {
@@ -9,10 +12,11 @@ namespace gle {
         using Service::Service;
 
       protected:
-        void OnInit() override {}
-        void OnUpdate(double deltaTime) override {}
-        void OnTerminate() override {}
+        void OnInit() override;
+        void OnUpdate(double deltaTime) override;
+        void OnTerminate() override;
 
       private:
+        std::unique_ptr<backend::IRenderer> worldRenderer;
     };
 } // namespace gle

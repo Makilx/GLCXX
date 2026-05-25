@@ -1,4 +1,4 @@
-# Install script for directory: /home/jose/Documents/Projects/GLCXX/Core
+# Install script for directory: /home/soso/Documents/Projects/GLC++/Core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

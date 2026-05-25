@@ -19,10 +19,12 @@ target_include_directories(
 )
 
 # Linking
-add_subdirectory(
-    ../Core 
-    ${CMAKE_BINARY_DIR}/Core
-)
+if(NOT TARGET GLECore)
+    add_subdirectory(
+        ../Core 
+        ${CMAKE_BINARY_DIR}/Core
+    )
+endif()
 
 target_link_libraries(GLEInterface
     PUBLIC
