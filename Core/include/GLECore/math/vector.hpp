@@ -62,12 +62,12 @@ namespace gle {
         constexpr bool operator<=(const Vec2 &v) const { return Magnitude() <= v.Magnitude(); }
         constexpr bool operator>(const Vec2 &v) const { return Magnitude() > v.Magnitude(); }
         constexpr bool operator<(const Vec2 &v) const { return Magnitude() < v.Magnitude(); }
-        constexpr bool operator==(const float s) const { return Magnitude() > s; }
-        constexpr bool operator!=(const float s) const { return Magnitude() > s; }
-        constexpr bool operator>=(const float s) const { return Magnitude() > s; }
-        constexpr bool operator<=(const float s) const { return Magnitude() > s; }
+        constexpr bool operator==(const float s) const { return Magnitude() == s; }
+        constexpr bool operator!=(const float s) const { return Magnitude() != s; }
+        constexpr bool operator>=(const float s) const { return Magnitude() >= s; }
+        constexpr bool operator<=(const float s) const { return Magnitude() <= s; }
         constexpr bool operator>(const float s) const { return Magnitude() > s; }
-        constexpr bool operator<(const float s) const { return Magnitude() > s; }
+        constexpr bool operator<(const float s) const { return Magnitude() < s; }
 
         // Methods
         constexpr float Magnitude() const { return Math::Sqrt(x * x + y * y); }
@@ -147,6 +147,18 @@ namespace gle {
             z /= s;
             return *this;
         }
+        constexpr bool operator==(const Vec3 &v) const { return x == v.x && y == v.y && z == v.z; }
+        constexpr bool operator!=(const Vec3 &v) const { return x != v.x || y != v.y || z != v.z; }
+        constexpr bool operator>=(const Vec3 &v) const { return Magnitude() >= v.Magnitude(); }
+        constexpr bool operator<=(const Vec3 &v) const { return Magnitude() <= v.Magnitude(); }
+        constexpr bool operator>(const Vec3 &v) const { return Magnitude() > v.Magnitude(); }
+        constexpr bool operator<(const Vec3 &v) const { return Magnitude() < v.Magnitude(); }
+        constexpr bool operator==(const float s) const { return Magnitude() == s; }
+        constexpr bool operator!=(const float s) const { return Magnitude() != s; }
+        constexpr bool operator>=(const float s) const { return Magnitude() >= s; }
+        constexpr bool operator<=(const float s) const { return Magnitude() <= s; }
+        constexpr bool operator>(const float s) const { return Magnitude() > s; }
+        constexpr bool operator<(const float s) const { return Magnitude() < s; }
 
         // Swizzle
         constexpr Vec2 xy() const { return {x, y}; }
@@ -253,6 +265,18 @@ namespace gle {
             w /= s;
             return *this;
         }
+        constexpr bool operator==(const Vec4 &v) const { return x == v.x && y == v.y && z == v.z && w == v.w; }
+        constexpr bool operator!=(const Vec4 &v) const { return x != v.x || y != v.y || z != v.z || w != v.w; }
+        constexpr bool operator>=(const Vec4 &v) const { return Magnitude() >= v.Magnitude(); }
+        constexpr bool operator<=(const Vec4 &v) const { return Magnitude() <= v.Magnitude(); }
+        constexpr bool operator>(const Vec4 &v) const { return Magnitude() > v.Magnitude(); }
+        constexpr bool operator<(const Vec4 &v) const { return Magnitude() < v.Magnitude(); }
+        constexpr bool operator==(const float s) const { return Magnitude() == s; }
+        constexpr bool operator!=(const float s) const { return Magnitude() != s; }
+        constexpr bool operator>=(const float s) const { return Magnitude() >= s; }
+        constexpr bool operator<=(const float s) const { return Magnitude() <= s; }
+        constexpr bool operator>(const float s) const { return Magnitude() > s; }
+        constexpr bool operator<(const float s) const { return Magnitude() < s; }
 
         // Swizzle (2D)
         constexpr Vec2 xy() const { return {x, y}; }

@@ -12,6 +12,7 @@ add_library(
     src/dummy.cpp
     src/service/runService.cpp
     src/service/renderService.cpp
+    src/instance/instance.cpp
 )
 
 target_include_directories(

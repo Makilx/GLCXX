@@ -7,7 +7,7 @@ namespace gle::backend {
     struct Vertex {
         Vec3 position;
         Vec2 textureCoords;
-        Vec2 uv;
+        Vec3 normal;
     };
 
     struct IMesh {
