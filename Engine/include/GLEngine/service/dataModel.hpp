@@ -1,9 +1,9 @@
 #pragma once
 
+#include <GLECore/debug/logger.hpp>
 #include <GLECore/pch.hpp>
-#include <GLEngine/service/service.hpp>
-
 #include <GLEngine/service/runService.hpp>
+#include <GLEngine/service/service.hpp>
 
 namespace gle {
     class RunService;
@@ -13,6 +13,8 @@ namespace gle {
             if (initialized)
                 return;
             initialized = true;
+
+            Write(LogType::Output, "Initializing data model");
 
             // Create all services
             RegisterService(new RunService(this));
@@ -60,7 +62,7 @@ namespace gle {
       private:
         void Update(double deltaTime) {
             for (auto &[id, service] : services) {
-                service->OnUpdate(deltaTime);
+                GetService<RunService>().OnUpdate(deltaTime);
             }
         }
         void RegisterService(Service *service) { services.insert({service->ToString(), service}); }

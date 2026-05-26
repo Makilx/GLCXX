@@ -1,2 +1,3 @@
-/home/jose/Documents/Projects/GLCXX/Core/build/CMakeFiles/edit_cache.dir
-/home/jose/Documents/Projects/GLCXX/Core/build/CMakeFiles/rebuild_cache.dir
+/home/soso/Documents/Projects/GLC++/Core/build/CMakeFiles/GLECore.dir
+/home/soso/Documents/Projects/GLC++/Core/build/CMakeFiles/edit_cache.dir
+/home/soso/Documents/Projects/GLC++/Core/build/CMakeFiles/rebuild_cache.dir

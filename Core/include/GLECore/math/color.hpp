@@ -125,6 +125,16 @@ namespace gle {
         static const Color Cyan;
         static const Color Magenta;
         static const Color Gray;
+        static const Color Orange;
+        static const Color Purple;
+        static const Color Brown;
+        static const Color Pink;
+        static const Color Lime;
+        static const Color Navy;
+        static const Color Teal;
+        static const Color Olive;
+        static const Color Maroon;
+        static const Color Silver;
 
         // Types
         struct HSV {
@@ -206,21 +216,30 @@ namespace gle {
             return std::string(out, 9);
         }
 
-        // Presets
-        static inline constexpr Color Red{1.0f, 0.0f, 0.0f, 1.0f};
-        static inline constexpr Color Green{0.0f, 1.0f, 0.0f, 1.0f};
-        static inline constexpr Color Blue{0.0f, 0.0f, 1.0f, 1.0f};
-        static inline constexpr Color White{1.0f, 1.0f, 1.0f, 1.0f};
-        static inline constexpr Color Black{0.0f, 0.0f, 0.0f, 1.0f};
-        static inline constexpr Color Clear{0.0f, 0.0f, 0.0f, 0.0f};
-        static inline constexpr Color Yellow{1.0f, 1.0f, 0.0f, 1.0f};
-        static inline constexpr Color Cyan{0.0f, 1.0f, 1.0f, 1.0f};
-        static inline constexpr Color Magenta{1.0f, 0.0f, 1.0f, 1.0f};
-        static inline constexpr Color Gray{0.5f, 0.5f, 0.5f, 1.0f};
-
         // Misc
         std::string ToString() const { return ToHEX(); }
     };
 
+    // Presets
+    inline constexpr Color Color::Red{1.0f, 0.0f, 0.0f, 1.0f};
+    inline constexpr Color Color::Green{0.0f, 1.0f, 0.0f, 1.0f};
+    inline constexpr Color Color::Blue{0.0f, 0.0f, 1.0f, 1.0f};
+    inline constexpr Color Color::White{1.0f, 1.0f, 1.0f, 1.0f};
+    inline constexpr Color Color::Black{0.0f, 0.0f, 0.0f, 1.0f};
+    inline constexpr Color Color::Clear{0.0f, 0.0f, 0.0f, 0.0f};
+    inline constexpr Color Color::Yellow{1.0f, 1.0f, 0.0f, 1.0f};
+    inline constexpr Color Color::Cyan{0.0f, 1.0f, 1.0f, 1.0f};
+    inline constexpr Color Color::Magenta{1.0f, 0.0f, 1.0f, 1.0f};
+    inline constexpr Color Color::Gray{0.5f, 0.5f, 0.5f, 1.0f};
+    inline constexpr Color Color::Silver{0.75f, 0.75f, 0.75f, 1.0f};
+    inline constexpr Color Color::Orange{1.0f, 0.5f, 0.0f, 1.0f};
+    inline constexpr Color Color::Purple{0.5f, 0.0f, 1.0f, 1.0f};
+    inline constexpr Color Color::Brown{0.6f, 0.3f, 0.1f, 1.0f};
+    inline constexpr Color Color::Pink{1.0f, 0.75f, 0.8f, 1.0f};
+    inline constexpr Color Color::Lime{0.75f, 1.0f, 0.0f, 1.0f};
+    inline constexpr Color Color::Navy{0.0f, 0.0f, 0.5f, 1.0f};
+    inline constexpr Color Color::Teal{0.0f, 0.5f, 0.5f, 1.0f};
+    inline constexpr Color Color::Olive{0.5f, 0.5f, 0.0f, 1.0f};
+    inline constexpr Color Color::Maroon{0.5f, 0.0f, 0.0f, 1.0f};
 
 } // namespace gle

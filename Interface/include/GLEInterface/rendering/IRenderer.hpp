@@ -10,6 +10,7 @@ namespace gle::backend {
         const IMesh *mesh;
         const Material *material;
         const Mat4 modelMatrix;
+        int renderPriority;
     };
 
     struct IRenderer {
@@ -35,6 +36,7 @@ namespace gle::backend {
             const IMesh *mesh;
             const Material *material;
             const std::vector<Mat4> modelMatrices;
+            int renderPriority;
         };
 
       protected:

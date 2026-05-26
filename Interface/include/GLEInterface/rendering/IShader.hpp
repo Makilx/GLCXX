@@ -1,6 +1,7 @@
 #pragma once
 
 #include <GLECore/core.hpp>
+#include <GLECore/enum/shader.hpp>
 
 namespace gle::backend {
     class IShader {

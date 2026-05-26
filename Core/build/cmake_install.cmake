@@ -1,4 +1,4 @@
-# Install script for directory: /home/jose/Documents/Projects/GLCXX/Core
+# Install script for directory: /home/soso/Documents/Projects/GLC++/Core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jose/Documents/Projects/GLCXX/Core/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/soso/Documents/Projects/GLC++/Core/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

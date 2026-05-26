@@ -40,7 +40,11 @@ void gle::RunService::OnUpdate(double deltaTime) {
     time += deltaTime;
 
     // Update services first
-    GetDataModel()->Update(deltaTime);
+    for (auto &[id, service] : GetDataModel()->services) {
+        if (service != this) {
+            service->OnUpdate(deltaTime);
+        }
+    }
 
     // Update callbacks
     for (const UpdateBind &bind : binds) {

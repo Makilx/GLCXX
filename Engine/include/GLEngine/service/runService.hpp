@@ -25,6 +25,9 @@ namespace gle {
         };
 
       public:
+        std::string ToString() const override { return "RunService"; }
+
+      public:
         double GetTime() const { return time; }
         double GetDeltaTime() const { return deltaTime; }
         int GetFramerate() const { return 1 / deltaTime; }

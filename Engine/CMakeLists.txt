@@ -11,6 +11,7 @@ add_library(
     GLEngine
     src/dummy.cpp
     src/service/runService.cpp
+    src/service/renderService.cpp
 )
 
 target_include_directories(

@@ -1,8 +1,6 @@
 #pragma once
 
-#include <GLECore/enum/input.hpp>
-#include <GLECore/enum/shader.hpp>
-#include <GLECore/enum/texture.hpp>
+#include <GLECore/debug/logger.hpp>
 #include <GLECore/event/dispatcher.hpp>
 #include <GLECore/event/event.hpp>
 #include <GLECore/event/signal.hpp>

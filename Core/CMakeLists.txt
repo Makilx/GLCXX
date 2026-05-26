@@ -6,23 +6,15 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Library
 project(GLECore LANGUAGES CXX)
-add_library(GLECore INTERFACE)
+add_library(
+    GLECore 
+    src/logger.cpp
+)
 target_include_directories(GLECore
-    INTERFACE
+    PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 target_compile_features(GLECore
-    INTERFACE
+    PUBLIC
         cxx_std_20
 )
-
-# Tooling target (safe to delete later)
-
-# add_library(GLEngineTooling STATIC
-#     tools/dummy.cpp
-# )
-
-# target_link_libraries(GLEngineTooling
-#     PRIVATE
-#         GLECore
-# )
