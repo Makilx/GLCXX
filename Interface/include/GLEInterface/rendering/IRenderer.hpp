@@ -1,5 +1,6 @@
 #pragma once
 
+#include <GLECore/enum/render.hpp>
 #include <GLEInterface/rendering/IMesh.hpp>
 #include <GLEInterface/rendering/Material.hpp>
 #include <GLEInterface/window/IWindow.hpp>
@@ -15,12 +16,17 @@ namespace gle::backend {
 
     struct IRenderer {
       public:
-        virtual ~IRenderer() = default;
-        virtual void Init(IWindow *window) = 0;
-        virtual void Terminate() = 0;
+        IRenderer(RenderAPI api) : currentAPI(api) {}
+        virtual ~IRenderer() { Terminate(); }
+        virtual void Init(IWindow *window) { userWindow = window; }
+        virtual void Terminate();
 
       public:
         virtual IShader *GetDefaultShader() const = 0;
+        virtual bool IsVSYNCEnabled() const = 0;
+
+        RenderAPI GetAPI() const { return currentAPI; }
+        RenderMode GetRenderMode() const { return mode; }
 
       public:
         virtual void BeginFrame() = 0;
@@ -29,6 +35,8 @@ namespace gle::backend {
         virtual void EndFrame() = 0;
         virtual void SetBackgroundColor(Color bgColor) = 0;
         virtual void SetDefaultShader(IShader *defaultShader) = 0;
+        virtual void SetVSYNC(bool enabled) = 0;
+        void SetRenderMode(RenderMode mode) { this->mode = mode; }
 
       public:
         struct RenderBatch {
@@ -44,5 +52,7 @@ namespace gle::backend {
 
       private:
         IWindow *userWindow = NULL;
+        RenderAPI currentAPI;
+        RenderMode mode;
     };
 } // namespace gle::backend
