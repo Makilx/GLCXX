@@ -46,7 +46,7 @@ namespace gle {
             return NULL;
         }
         template <typename T>
-        Service GetService() const {
+        T *GetService() const {
             for (auto &[id, service] : services) {
                 T *c = dynamic_cast<T *>(service);
                 if (c)
@@ -62,7 +62,7 @@ namespace gle {
       private:
         void Update(double deltaTime) {
             for (auto &[id, service] : services) {
-                GetService<RunService>().OnUpdate(deltaTime);
+                GetService<RunService>()->OnUpdate(deltaTime);
             }
         }
         void RegisterService(Service *service) { services.insert({service->ToString(), service}); }

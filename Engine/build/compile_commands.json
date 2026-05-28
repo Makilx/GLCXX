@@ -1,38 +1,38 @@
 [
 {
-  "directory": "/home/jose/Documents/Projects/GLCXX/Engine/build",
-  "command": "/usr/bin/clang++  -I/home/jose/Documents/Projects/GLCXX/Engine/include -I/home/jose/Documents/Projects/GLCXX/Core/include -I/home/jose/Documents/Projects/GLCXX/Interface/include -g -std=gnu++20 -o CMakeFiles/GLEngine.dir/src/dummy.cpp.o -c /home/jose/Documents/Projects/GLCXX/Engine/src/dummy.cpp",
-  "file": "/home/jose/Documents/Projects/GLCXX/Engine/src/dummy.cpp",
+  "directory": "/home/soso/Documents/Projects/GLC++/Engine/build",
+  "command": "/usr/bin/clang++ -I/home/soso/Documents/Projects/GLC++/Engine/include -I/home/soso/Documents/Projects/GLC++/Core/include -I/home/soso/Documents/Projects/GLC++/Interface/include -g -std=gnu++20 -o CMakeFiles/GLEngine.dir/src/dummy.cpp.o -c /home/soso/Documents/Projects/GLC++/Engine/src/dummy.cpp",
+  "file": "/home/soso/Documents/Projects/GLC++/Engine/src/dummy.cpp",
   "output": "CMakeFiles/GLEngine.dir/src/dummy.cpp.o"
 },
 {
-  "directory": "/home/jose/Documents/Projects/GLCXX/Engine/build",
-  "command": "/usr/bin/clang++  -I/home/jose/Documents/Projects/GLCXX/Engine/include -I/home/jose/Documents/Projects/GLCXX/Core/include -I/home/jose/Documents/Projects/GLCXX/Interface/include -g -std=gnu++20 -o CMakeFiles/GLEngine.dir/src/service/runService.cpp.o -c /home/jose/Documents/Projects/GLCXX/Engine/src/service/runService.cpp",
-  "file": "/home/jose/Documents/Projects/GLCXX/Engine/src/service/runService.cpp",
+  "directory": "/home/soso/Documents/Projects/GLC++/Engine/build",
+  "command": "/usr/bin/clang++ -I/home/soso/Documents/Projects/GLC++/Engine/include -I/home/soso/Documents/Projects/GLC++/Core/include -I/home/soso/Documents/Projects/GLC++/Interface/include -g -std=gnu++20 -o CMakeFiles/GLEngine.dir/src/service/runService.cpp.o -c /home/soso/Documents/Projects/GLC++/Engine/src/service/runService.cpp",
+  "file": "/home/soso/Documents/Projects/GLC++/Engine/src/service/runService.cpp",
   "output": "CMakeFiles/GLEngine.dir/src/service/runService.cpp.o"
 },
 {
-  "directory": "/home/jose/Documents/Projects/GLCXX/Engine/build",
-  "command": "/usr/bin/clang++  -I/home/jose/Documents/Projects/GLCXX/Engine/include -I/home/jose/Documents/Projects/GLCXX/Core/include -I/home/jose/Documents/Projects/GLCXX/Interface/include -g -std=gnu++20 -o CMakeFiles/GLEngine.dir/src/service/renderService.cpp.o -c /home/jose/Documents/Projects/GLCXX/Engine/src/service/renderService.cpp",
-  "file": "/home/jose/Documents/Projects/GLCXX/Engine/src/service/renderService.cpp",
+  "directory": "/home/soso/Documents/Projects/GLC++/Engine/build",
+  "command": "/usr/bin/clang++ -I/home/soso/Documents/Projects/GLC++/Engine/include -I/home/soso/Documents/Projects/GLC++/Core/include -I/home/soso/Documents/Projects/GLC++/Interface/include -g -std=gnu++20 -o CMakeFiles/GLEngine.dir/src/service/renderService.cpp.o -c /home/soso/Documents/Projects/GLC++/Engine/src/service/renderService.cpp",
+  "file": "/home/soso/Documents/Projects/GLC++/Engine/src/service/renderService.cpp",
   "output": "CMakeFiles/GLEngine.dir/src/service/renderService.cpp.o"
 },
 {
-  "directory": "/home/jose/Documents/Projects/GLCXX/Engine/build",
-  "command": "/usr/bin/clang++  -I/home/jose/Documents/Projects/GLCXX/Engine/include -I/home/jose/Documents/Projects/GLCXX/Core/include -I/home/jose/Documents/Projects/GLCXX/Interface/include -g -std=gnu++20 -o CMakeFiles/GLEngine.dir/src/instance/instance.cpp.o -c /home/jose/Documents/Projects/GLCXX/Engine/src/instance/instance.cpp",
-  "file": "/home/jose/Documents/Projects/GLCXX/Engine/src/instance/instance.cpp",
+  "directory": "/home/soso/Documents/Projects/GLC++/Engine/build",
+  "command": "/usr/bin/clang++ -I/home/soso/Documents/Projects/GLC++/Engine/include -I/home/soso/Documents/Projects/GLC++/Core/include -I/home/soso/Documents/Projects/GLC++/Interface/include -g -std=gnu++20 -o CMakeFiles/GLEngine.dir/src/instance/instance.cpp.o -c /home/soso/Documents/Projects/GLC++/Engine/src/instance/instance.cpp",
+  "file": "/home/soso/Documents/Projects/GLC++/Engine/src/instance/instance.cpp",
   "output": "CMakeFiles/GLEngine.dir/src/instance/instance.cpp.o"
 },
 {
-  "directory": "/home/jose/Documents/Projects/GLCXX/Engine/build/Core",
-  "command": "/usr/bin/clang++  -I/home/jose/Documents/Projects/GLCXX/Core/include -g -std=gnu++20 -o CMakeFiles/GLECore.dir/src/logger.cpp.o -c /home/jose/Documents/Projects/GLCXX/Core/src/logger.cpp",
-  "file": "/home/jose/Documents/Projects/GLCXX/Core/src/logger.cpp",
+  "directory": "/home/soso/Documents/Projects/GLC++/Engine/build",
+  "command": "/usr/bin/clang++ -I/home/soso/Documents/Projects/GLC++/Core/include -g -std=gnu++20 -o Core/CMakeFiles/GLECore.dir/src/logger.cpp.o -c /home/soso/Documents/Projects/GLC++/Core/src/logger.cpp",
+  "file": "/home/soso/Documents/Projects/GLC++/Core/src/logger.cpp",
   "output": "Core/CMakeFiles/GLECore.dir/src/logger.cpp.o"
 },
 {
-  "directory": "/home/jose/Documents/Projects/GLCXX/Engine/build/Interface",
-  "command": "/usr/bin/clang++  -I/home/jose/Documents/Projects/GLCXX/Interface/include -I/home/jose/Documents/Projects/GLCXX/Core/include -g -std=gnu++20 -o CMakeFiles/GLEInterface.dir/src/dummy.cpp.o -c /home/jose/Documents/Projects/GLCXX/Interface/src/dummy.cpp",
-  "file": "/home/jose/Documents/Projects/GLCXX/Interface/src/dummy.cpp",
+  "directory": "/home/soso/Documents/Projects/GLC++/Engine/build",
+  "command": "/usr/bin/clang++ -I/home/soso/Documents/Projects/GLC++/Interface/include -I/home/soso/Documents/Projects/GLC++/Core/include -g -std=gnu++20 -o Interface/CMakeFiles/GLEInterface.dir/src/dummy.cpp.o -c /home/soso/Documents/Projects/GLC++/Interface/src/dummy.cpp",
+  "file": "/home/soso/Documents/Projects/GLC++/Interface/src/dummy.cpp",
   "output": "Interface/CMakeFiles/GLEInterface.dir/src/dummy.cpp.o"
 }
 ]

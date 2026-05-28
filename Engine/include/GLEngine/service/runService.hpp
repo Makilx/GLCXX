@@ -5,6 +5,8 @@
 #include <functional>
 
 namespace gle {
+    class DataModel;
+
     enum class RunPriority : int {
         First = 0,
         Input = 1000,
@@ -63,5 +65,7 @@ namespace gle {
         std::vector<UpdateBind> binds;
         double time = 0;
         double deltaTime = 0;
+
+        friend class DataModel;
     };
 } // namespace gle

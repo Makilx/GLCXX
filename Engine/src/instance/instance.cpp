@@ -190,6 +190,7 @@ void gle::Instance::Destroy() {
     if (!canBeDestroyed || destroyed)
         return;
 
+    SetActive(false);
     SetParent(NULL);
     ClearAllChildren();
 
@@ -218,7 +219,7 @@ void gle::Instance::ClearAllChildren() const {
     }
 }
 void gle::Instance::SetActive(bool active) {
-    if (this->active == active)
+    if (this->active == active || destroyed)
         return;
     this->active = active;
     OnActiveSet(active);
